@@ -1,0 +1,131 @@
+html, body  {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*------------- map -------------*/
+
+#map {
+    width: auto;
+    height: 800px;
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+}
+
+/*------------- index box -------------*/
+
+/*-- table ---*/
+/*
+https://qiita.com/__osanai/items/278e9395d27cddceefa3
+*/
+.table_container {
+    margin: 0px auto 5px auto;
+    width:100%;
+}
+
+.table_container table {
+    border-collapse: collapse;
+    /*border-collapse: separate;*/
+    border: 1px solid #f0f0f0;
+    /*border: 2px solid rgba(0,0,0,0.0);*/
+    /*border: 2px solid #000;*/
+    font-size: 8px;
+}
+
+/* [上下][左右] */
+/* [上][左右][下] */
+/* [上][右][下][左] */
+.header_tilte {
+    height: 1.9em;
+    background: rgba(0,0,0,0.0);
+    /*border: 1px solid #000;*/
+    border: 1px solid #f0f0f0;
+    padding: 0px 2px 0px 2px;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header_item {
+    height: 3.0em;
+    background: #c3e3f0;
+    border: 1px solid #f0f0f0;
+    padding: 0px 2px 0px 2px;
+    color: #000;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 8px;
+}
+
+.table_data {
+    height: 3.0em;
+    background: #c1ede7;
+    border: 1px solid #f0f0f0;
+    padding: 0px 2px 0px 2px;
+    color: #000000;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+/* paginationjs */
+.paginationjs-go-input > input[type="text"] {
+    width: 52px !important;
+    /* height: 24px !important; */
+    /* font-size: 8px !important; */
+}
+
+
+/*---------<< construction: 舗装工事一覧 >>--------------*/
+
+/* 行の高さを変更する */
+/*
+#construction thead td{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+#construction tbody td{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+*/
+
+/* 行の色を変更する */
+/*
+#construction thead tr{
+    background-color: #CCCCCC;
+}
+*/
+#construction tbody tr.odd{
+    background-color: #FFFFFF;
+}
+#constructiontbody tr.even{
+    background-color: #EEEEEE;
+}
+
+
+/* 罫線を引く */
+/*
+#construction thead td:first-child{
+    border-left: 1px solid #404040;
+}
+#construction thead td{
+    border-top: 1px solid #404040;
+    border-right: 1px solid #404040;
+}
+
+#construction tbody td:first-child{
+    border-left: 1px solid #404040;
+}
+#construction tbody td{
+    border-right: 1px solid #404040;
+}
+*/
+
+
+#damage_select {
+}
+

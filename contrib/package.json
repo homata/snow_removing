@@ -1,0 +1,23 @@
+{
+  "name": "snow_removing",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "admin-lte": "^2.4.8",
+    "bootstrap": "^4.1.3",
+    "bootstrap-datepicker": "^1.8.0",
+    "bootstrap-select": "^1.13.3",
+    "ionicons": "^4.4.7",
+    "jquery": "^3.3.1",
+    "jquery-ui-dist": "^1.12.1",
+    "leaflet": "^1.3.4",
+    "leaflet.markercluster": "^1.4.1",
+    "morris.js": "^0.5.0",
+    "onsenui": "^2.10.5",
+    "popper.js": "^1.14.5",
+    "raphael": "^2.2.7",
+    "sprintf-js": "^1.1.1"
+  }
+}

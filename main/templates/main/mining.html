@@ -1,0 +1,35 @@
+{% load staticfiles %}
+{% load i18n %}
+
+<div class="row">
+    <!-- 心拍波形 -->
+    <div class="col-md-12">
+        <div class="box box-success">
+            <div class="box-header with-border">
+                <h3 class="box-title">{% trans '心拍波形' %}</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+            </div>
+            <div class="box-body">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="box-footer clearfix">
+            </div>
+        </div>
+
+        <!-- small box -->
+        <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>120</h3>
+              <p>心拍数(BPM)</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-heart"></i>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block title %}
+{% trans 'Snow Removing' %}
+{% endblock %}
+
+<!-- header --->
+{% block extrahead %}
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="{% static 'node_modules/leaflet/dist/leaflet.css' %}"/>
+    <script src="{% static 'node_modules/leaflet/dist/leaflet.js' %}"></script>
+
+    <!-- leaflet.markercluster --->
+    <link rel="stylesheet" href="{% static 'node_modules/leaflet.markercluster/dist/MarkerCluster.css' %}" />
+    <link rel="stylesheet" href="{% static 'node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css' %}" />
+    <script src="{% static 'node_modules/leaflet.markercluster/dist/leaflet.markercluster.js' %}"></script>
+
+    <!-- onsen ui --->
+    <link rel="stylesheet" href="{% static 'node_modules/onsenui/css/onsenui.css' %}">
+    <link rel="stylesheet" href="{% static 'node_modules/onsenui/css/onsen-css-components.min.css' %}">
+    <script src="{% static 'node_modules/onsenui/js/onsenui.min.js' %}"></script>
+
+    <!-- chart -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+	<script src="https://github.com/nagix/chartjs-plugin-streaming/releases/download/v1.7.0/chartjs-plugin-streaming.min.js"></script>
+
+    <!-- * jVector Maps http://jvectormap.com/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/>
+    <script src="http://jvectormap.com/js/jquery-jvectormap-2.0.3.min.js"></script>
+
+    <script src="{% static 'js/jquery-jvectormap-world-mill.js' %}"></script>
+    <script src="{% static 'js/jquery-jvectormap-asia-mill.js' %}"></script>
+    <script src="{% static 'js/jquery-jvectormap-world-merc.js' %}"></script>
+    <script src="{% static 'js/jquery-jvectormap-asia-merc.js' %}"></script>
+    <script src="https://rawgit.com/hokekiyoo/jVectormapJP/master/jquery-jvectormap-jp-merc.js"></script>
+
+{% endblock %}
+
+<!-- body --->
+{% block content %}
+
+<ons-page>
+    <ons-toolbar>
+        <div class="center">雪降ろしマイニング</div>
+    </ons-toolbar>
+
+    <ons-tabbar swipeable position="auto">
+        <!--
+        <ons-tab page="tab1.html" label="マップ" icon="ion-home, material:md-home" badge="7" active>
+        </ons-tab>
+        <ons-tab page="tab2.html" label="ランキング" icon="md-menu" active-icon="md-face">
+        </ons-tab>
+        -->
+        <ons-tab page="map.html" label="マップ" icon="ion-home, material:md-home" active>
+        </ons-tab>
+        <ons-tab page="leaderboard.html" label="ランキング" icon="md-menu">
+        </ons-tab>
+        <ons-tab page="mining.html" label="マイニング" icon="md-face">
+        </ons-tab>
+        <ons-tab page="mydata..html" label="マイデータ" icon="md-walk">
+        </ons-tab>
+    </ons-tabbar>
+</ons-page>
+
+<!-- map -->
+<template id="map.html">
+  <ons-page id="tab_map">
+    {% include  'main/map.html' %}
+  </ons-page>
+</template>
+
+<!-- leaderboard -->
+<template id="leaderboard.html">
+  <ons-page id="tab_leaderboard">
+    {% include  'main/leaderboard.html' %}
+  </ons-page>
+</template>
+
+<!-- Mining -->
+<template id="mining.html">
+  <ons-page id="tab_mining">
+    {% include  'main/mining.html' %}
+  </ons-page>
+</template>
+
+    <!-- MyData -->
+<template id="mydata..html">
+  <ons-page id="tab_mydata">
+    {% include  'main/mydata.html' %}
+  </ons-page>
+</template>
+
+{% endblock %}
+
+<!-- body css --->
+{% block css %}
+    <link rel="stylesheet" href="{% static 'main/css/app.css' %}">
+{% endblock %}
+
+<!-- body javascript --->
+{% block js %}
+    <script type="text/javascript" src="{% static 'main/js/app.js' %}"></script>
+{% endblock %}
+

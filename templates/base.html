@@ -1,0 +1,76 @@
+{% load staticfiles %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{% trans '雪降ろしマイニング' %}</title>
+
+    <!-- jQuery UI v1.12.1 -->
+    <link rel="stylesheet" href="{% static 'node_modules/jquery-ui-dist/jquery-ui.min.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'node_modules/jquery-ui-dist/jquery-ui.theme.min.css' %}"> -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap-theme.min.css' %}">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static 'node_modules/admin-lte/plugins/font-awesome/css/font-awesome.min.css' %}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="{% static 'node_modules/ionicons/dist/css/ionicons.min.css' %}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{% static 'node_modules/admin-lte/dist/css/adminlte.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_all-skins.min.css' %}">
+
+    <!-- jQuery v3.3.1 -->
+    <script src="{% static 'node_modules/jquery/dist/jquery.min.js' %}"></script>
+    <!-- jQuery UI v1.12.1 -->
+    <script src="{% static 'node_modules/jquery-ui-dist/jquery-ui.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <!-- AdminLTE App -->
+    <script src="{% static 'node_modules/admin-lte/dist/js/adminlte.min.js' %}"></script>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    {% block extrahead %}
+    {% endblock %}
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+
+    <!-- REQUIRED SCRIPTS -->
+    <!-- contrib -->
+    <script type="text/javascript" src="{% static 'node_modules/sprintf-js/dist/sprintf.min.js' %}"></script>
+
+    <!-- base -->
+    <!--
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script type="text/javascript" src={% static 'js/base.js' %}></script>
+    <script type="text/javascript" src="{% static 'js/utility.js' %}"></script>
+    -->
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+<!-- Main Footer -->
+<footer class="fixed-bottom">
+    <small></small>
+</footer>
+
+<!-- GoogleAnalytics -->
+{% include 'google.html' %}
+
+</body>
+</html>
