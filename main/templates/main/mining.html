@@ -29,7 +29,7 @@
     <div class="col-sm-3">
         <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>120</h3>
+              <h3 id="score_bpm">120</h3>
               <p>心拍数(BPM)</p>
             </div>
             <div class="icon">
@@ -40,7 +40,7 @@
     <div class="col-sm-3">
         <div class="small-box bg-red">
             <div class="inner">
-              <h3>36.5℃</h3>
+              <h3 id="score_body">36.5℃</h3>
               <p>体温</p>
             </div>
             <div class="icon">
@@ -51,12 +51,16 @@
     <div class="col-sm-3">
         <div class="small-box bg-green">
             <div class="inner">
-              <h3>23</h3>
-              <p>採掘（マイニング）ポイント</p>
+              <h3 id="score_mining">23</h3>
+              <p>採掘ポイント</p>
             </div>
             <div class="icon">
               <i class="ion ion-ios-flag"></i>
             </div>
         </div>
     </div>
+</div>
+
+<div>
+    <button type="button" class="btn btn-block btn-warning" onclick="onButtonClick()">採掘（マイニング）開始 !!!!</button>
 </div>

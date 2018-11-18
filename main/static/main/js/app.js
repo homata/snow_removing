@@ -3,7 +3,7 @@
  */
 window.addEventListener("load",function(e){
     map_draw();
-    chart_draw();
+    //chart_draw();
     vector_map_draw();
     pie_chart_draw();
     radar_draw();
@@ -127,13 +127,13 @@ function map_draw() {
         var dataID = ii;
 
         var marker = L.marker(new L.LatLng(lat, lon), { title: dataID,icon: sampleIcon });
-        marker.bindPopup("雪降ろしポータル: ハック " + dataID + "");
+        marker.bindPopup("雪かき・雪下ろしポータル: ハック番号 = " + dataID + "");
         markers.addLayer(marker);
     }
 
     if (length > 0) {
         map.addLayer(markers);
-        layerControl.addOverlay(markers, "雪降ろしポータル");
+        layerControl.addOverlay(markers, "雪かき・雪下ろしポータル");
 
         snowMarker = markers;
     }
