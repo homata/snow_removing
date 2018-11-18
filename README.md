@@ -1,16 +1,24 @@
+雪かき・雪下ろしマイニング
+--------
+ビットコインでもよく聞くかと思いますが、金や銀を掘る作業のイメージになぞらえてマイニング（採掘）と呼ばれています。
+名寄の市民の運動不足解消と日々の雪かき・雪下ろし作業を積極的に参加出来るように
 
-### リアルタイム表示
+日々の雪かき・雪下ろし作業を、採掘（マイニング）として、ゲーム感覚でやってもらう
 
-* [リアルタイムグラフなら「とりあえずEpoch.js」をおススメしたい](https://qiita.com/okoppe8/items/d8d8bc4e68b1da4a0a36)
+### ポイント
+* 市民協働で、助け合いで作業する
+* 誰でも参加出来る仕組み
+* 天気、気温、雪の日は等を考慮したポイント加算
+* 発掘ポータルでもっとも採掘（マイニング）をした人がオーナとなる
 
-    * [chartjs-plugin-streaming](https://nagix.github.io/chartjs-plugin-streaming/samples/line-horizontal.html)
-    
-/**--------------------------------------
-### jVector Maps
- 
-* http://jvectormap.com/
-* [jVectorMap - fast and easy plugin to display vector maps of the world](http://plugindetector.com/jvector-map)
-* コピペで(ほぼ)一発！jQueryでオシャレな地図ツールを作ったよ。
-    * http://www.procrasist.com/entry/map-tool
-    * https://github.com/hokekiyoo/map_maker
- 
+### ヘルスケア
+* 市民の運動不足の解消
+* 日々の活動を自動で記録
+
+### 楽しさ
+* IngressやポケモンGOのようなオンライン位置情報ゲーム
+* ゲーミフィーケージョンで日々の作業を
+* 将来的にはスマートフォン向けの拡張現実技術も導入
+* ランキングの順位は活動しなければ下降することで継続性を期待
+* 「市民のプライド・ランキング」として達成を褒める
+
