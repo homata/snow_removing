@@ -92,6 +92,14 @@ function map_draw() {
         console.log("[ " + latitude + ", "  + longitude + "],");
     });
     /**/
+    var sampleIcon = L.icon({
+        iconUrl: '/static/images/snow.png',   // https://www.monopot-illust.com/illust/503
+        iconRetinaUrl: '/static/images/snow.png',
+        iconSize: [50, 50],
+        iconAnchor: [25, 50],
+        popupAnchor: [0, -50],
+    });
+
     var points = [
         [ 44.3546, 142.4625],
         [ 44.3585, 142.4596],
@@ -118,7 +126,7 @@ function map_draw() {
         var lat = points[ii][0];
         var dataID = ii;
 
-        var marker = L.marker(new L.LatLng(lat, lon), { title: dataID });
+        var marker = L.marker(new L.LatLng(lat, lon), { title: dataID,icon: sampleIcon });
         marker.bindPopup("雪降ろしポータル: ハック " + dataID + "");
         markers.addLayer(marker);
     }

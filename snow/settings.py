@@ -25,7 +25,7 @@ SECRET_KEY = '!8!embxlx&frd*bvlgbu^57dyyo35!&f3ovmu*==g9gr)tdwup'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -117,6 +117,9 @@ USE_L10N = True
 USE_TZ = True
 
 
+#MEDIA_ROOT  = os.path.join(BASE_DIR, 'media', 'assets', 'damage')
+#MEDIA_URL   = '/downloads/'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
@@ -135,13 +138,13 @@ STATICFILES_FINDERS = (
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
-STATIC_ROOT  = os.path.join(BASE_DIR, 'static/')
+#STATIC_ROOT  = os.path.join(BASE_DIR, 'static/')
 #STATIC_ROOT = str(APPS_DIR.path('static'))
 #STATIC_ROOT = str(APPS_DIR.path('dist'))
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    #os.path.join(BASE_DIR, 'static/'),
+    os.path.join(BASE_DIR, 'static/'),
     os.path.join(BASE_DIR, 'contrib/'),
     #str(APPS_DIR.path('static')),
     #str(APPS_DIR.path('contrib')),
