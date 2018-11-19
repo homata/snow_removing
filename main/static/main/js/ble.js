@@ -74,7 +74,7 @@ function update() {
 
   var val_bpm;   // parseInt($("#score_bpm").text());
   var val_body;  // parseFloat($("#score_body").text());
-  var va_mining; // parseInt($("#score_mining").text());
+  var va_mining = parseInt($("#score_mining").text());
 
   var min = 60;
   var max = 120 ;
@@ -87,7 +87,7 @@ function update() {
   va_mining += 1;
 
   $("#score_bpm").text(val_bpm);
-  $("#score_body").text(val_body);
+  $("#score_body").text(val_body + "℃");
   $("#score_mining").text(va_mining);
 
   setTimeout("update()", 1000);

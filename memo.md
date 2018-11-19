@@ -34,3 +34,42 @@
 * [Web Bluetooth (仕様)](https://webbluetoothcg.github.io/web-bluetooth/)
 
 * [Web Bluetooth API を使ってBLEデバイスをブラウザから操作する](http://tkybpp.hatenablog.com/entry/2016/08/18/100000)
+
+
+### Cordova
+
+* [Cordovaを使って、Androidの実機実行するまで](https://qiita.com/cognitom/items/3b30284e8d01eaf122b7)
+    * [Genymotion](https://qiita.com/cognitom/items/3b30284e8d01eaf122b7) 
+* [[Ionic3] 開発環境の構築からAndroid実機デバッグまでの手順まとめ](https://qiita.com/alclimb/items/a266871625f1227f425d)
+* [CordovaでHTML5ハイブリッドアプリ開発 - Android編](http://cordovaandroid.saetl.net/process2_5.html)
+* [Chrome Inspectの使い方](http://android.akjava.com/html5/chromeinspect.html)
+
+
+#### 実機で検証
+    空のアプリを作成
+    $ cordova create hello-app
+
+    プラットフォームの追加
+    $ cd hello-app
+    $ cordova platform add browser
+    $ cordova platform add android
+
+    $ vi .gitignore
+    platforms/*
+    !platforms/platforms.json
+    plugins
+
+    エミュレータでの検証
+    1. Genymotion.appを起動
+    2. アプリケーション内で、VMをダウンロード (もしまだなければ)
+    3. VMを起動
+    4. Cordovaから起動 $ cordova run android
+
+    実機で検証
+    1. Android実機のUSBデバッグ機能をONに
+    2. MacにAndroid実機をUSB接続 (USBケーブルが充電専用だとNGなので注意)
+    3. 次のコマンドで接続確認して、表示されればOK $ adb devices
+    4. Cordovaから起動 $ cordova run android
+    5. ビルドを待つ...
+    6. 実機でアプリが起動!
+    7. パソコンでChrome://inspectを開く (Chromeブラウザーを使う)

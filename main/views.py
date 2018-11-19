@@ -29,14 +29,18 @@ def index(request):
         #if request.user.is_authenticated:
         #    contexts['user'] = {"username": request.user.username, "user_id": request.user.id, "is_authenticated": True}
 
-        items = []
-        for ii in range(10):
-            item = {}
-            item['name']  = "%d: xxxxxx" % (ii+1)
-            item['sub_name']  = _("zzzzzz")
-            items.append(item)
-
-        contexts['items'] = items
+        contexts['items'] = [
+            { "rank":  1, 'name': "avocado",    "locate": "名寄市朝日"},
+            { "rank":  2, 'name': "strawberry", "locate": "名寄市弥生"},
+            { "rank":  3, 'name': "plum",       "locate": "名寄市瑞穂"},
+            { "rank":  4, 'name': "persimmon",  "locate": "名寄市砺波"},
+            { "rank":  5, 'name': "cherry",     "locate": "名寄市風連町東風連"},
+            { "rank":  6, 'name': "watermelon", "locate": "名寄市内淵"},
+            { "rank":  7, 'name': "banana",     "locate": "名寄市東六条北"},
+            { "rank":  8, 'name': "papaya",     "locate": "名寄市東二条北"},
+            { "rank":  9, 'name': "mango",      "locate": "名寄市日彰"},
+            { "rank": 10, 'name': "peach",      "locate": "名寄市西八条南"}
+        ]
 
         return render(request, 'main/index.html', contexts)
 
