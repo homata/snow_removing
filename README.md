@@ -35,3 +35,11 @@
 * 「市民のプライド・ランキング」として達成したことを皆で褒める
 * 投げ銭方式でオーディエンスから作業を応援してもらう (頑張れ！)
 
+ドキュメント
+----
+* 説明資料 
+    - PDF: [snow_removing.pdf](https://github.com/homata/snow_removing/blob/master/snow_removing.pdf)
+    - PPT: [snow_removing.pptx](https://github.com/homata/snow_removing/blob/master/ssnow_removing.pptx)
+
+* デモ動画
+    - [snow_removing.m4v](https://github.com/homata/snow_removing/blob/master/snow_removing.m4v)
